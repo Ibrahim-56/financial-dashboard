@@ -8,7 +8,7 @@ st.set_page_config(page_title="Financial Dashboard", layout="wide")
 # Load data
 df = pd.read_csv("financial_dashboard_data.csv")
 
-st.title("📊 Financial Performance Dashboard")
+st.title("Financial Performance Dashboard")
 
 # KPI Cards
 col1, col2, col3 = st.columns(3)
