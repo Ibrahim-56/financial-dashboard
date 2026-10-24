@@ -1,3 +1,5 @@
+[![CI](https://github.com/Ibrahim-56/financial-dashboard/actions/workflows/tests.yml/badge.svg)](https://github.com/Ibrahim-56/financial-dashboard/actions/workflows/tests.yml)
+
 # Financial Performance Dashboard
 
 An interactive Streamlit dashboard that summarizes monthly revenue, expenses, and profit using a synthetic dataset.
