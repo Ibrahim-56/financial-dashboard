@@ -1,30 +1,48 @@
-Financial Performance Dashboard for "Data Analyst position at Tarmeez Capital".
-A streamlined financial analytics dashboard built using Streamlit, Pandas, and Plotly.
-The dashboard presents monthly revenue, expenses, and profit using interactive visualizations based on a synthetic internal financial dataset.
+# Financial Performance Dashboard
 
-Overview:
-This project demonstrates how organizations can create lightweight internal financial dashboards using Python.
-The dashboard is suitable for internal reporting, monitoring financial KPIs, and building simple BI tools without complex infrastructure.
+An interactive Streamlit dashboard that summarizes monthly revenue, expenses, and profit using a synthetic dataset.
 
-Features:
-Key financial metrics: revenue, expenses, profit
-Interactive revenue trend line chart
-Interactive expenses trend line chart
-Monthly profit bar chart
-Clean layout built with Streamlit
-Synthetic financial dataset covering 12 months.
+## Features
 
-Technologies Used:
-Python
-Streamlit
-Pandas
-Plotly
-CSV-based dataset
+- KPI totals for revenue, expenses, and profit
+- Monthly revenue trend
+- Monthly expense trend
+- Monthly profit chart
 
-Project Structure:
-financial-dashboard/
-│
-├── app.py                        # Main Streamlit application
-├── financial_dashboard_data.csv  # Synthetic dataset
-├── requirements.txt              # Dependencies for the project
-└── README.md                     # Documentation
+## Technology
+
+- Python
+- Streamlit
+- Pandas
+- Plotly
+
+## Run locally
+
+Requires Python 3.10 or later.
+
+```bash
+python -m venv .venv
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+# macOS/Linux
+source .venv/bin/activate
+
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+The app expects `financial_dashboard_data.csv` in the repository root.
+
+## Tests and CI
+
+Run the dataset checks locally:
+
+```bash
+pytest -v
+```
+
+GitHub Actions checks Python syntax and validates the dataset schema, numeric values, and profit calculations. These checks do not replace a manual review of the dashboard in a browser.
+
+## Data note
+
+The included financial dataset is synthetic and intended for demonstration; it is not a real company's financial data.
